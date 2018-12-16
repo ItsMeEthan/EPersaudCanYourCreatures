@@ -4,14 +4,13 @@ import People.Person;
 import Rooms.Room;
 import Rooms.CardShop;
 import Rooms.Ellie;
-	
+
 import java.util.Scanner;
 
 public class Runner {
 	
 
 	private static boolean gameOn = true;
-	
 	public static void main(String[] args)
 	{
 		System.out.println("To the East of you there is a small CardShop");
@@ -39,7 +38,7 @@ public class Runner {
 
 		 
 		 //Setup player 1 and the input scanner
-		Person player1 = new Person("FirstName", "FamilyName", 0,0, 0, 0);
+		Person player1 = new Person("FirstName", "FamilyName", 0,0, 0, 0,0, 0);
 		building[0][0].enterRoom(player1);
 		Scanner in = new Scanner(System.in);
 		while(gameOn)
@@ -54,10 +53,7 @@ public class Runner {
 			else {
 				System.out.println("Please choose a valid move.");
 			}
-			
-			
 		}
-		in.close();
 	}
 
 	/**

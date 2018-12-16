@@ -4,7 +4,7 @@ import People.Person;
 
 public class Room {
 	Person occupant;
-	int xLoc,yLoc,xDeck,xGold,Ball;
+	int xLoc,yLoc,xDeck,xGold,Ball,ellie1;
 	
 	public Room(int x, int y)
 	{
